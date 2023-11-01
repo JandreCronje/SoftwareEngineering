@@ -254,9 +254,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3fe0e280d187ae4ea40003016d43252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceType1: 10
-  resourceType2: 10
-  resourceType3: 10
+  resourceType1: 0
+  resourceType2: 0
+  resourceType3: 0
 --- !u!114 &777120876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourceGainModifier: 2
-  terraformingProgressModifier: 2
+  terraformingProgressModifier: 1
 --- !u!114 &777120877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,8 +312,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   terraformingProgress: 0
-  terraformingVariable1: 0
-  terraformingVariable2: 0
-  terraformingVariable3: 0
   resourceGatheringScript: {fileID: 777120875}
   buildingConstructionScript: {fileID: 777120877}

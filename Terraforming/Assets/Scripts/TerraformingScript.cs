@@ -5,9 +5,7 @@ using UnityEngine;
 public class TerraformingScript : MonoBehaviour
 {
     public float terraformingProgress;
-    public float terraformingVariable1;
-    public float terraformingVariable2;
-    public float terraformingVariable3;
+
 
     public ResourceGatheringScript resourceGatheringScript; // Reference to the ResourceGatheringScript
     public BuildingConstructionScript buildingConstructionScript; // Reference to the BuildingConstructionScript
@@ -74,14 +72,14 @@ public class TerraformingScript : MonoBehaviour
         if (terraformingProgress < 100)
         {
             // Implement logic to increase terraforming progress when the user left-clicks
-            Debug.Log("Terraforming +1");
+            Debug.Log("Terraforming percentage: " + terraformingProgress + "%");
             terraformingProgress += 1; // You can change this value based on your desired progression rate
             UpdateTerraformingProgress(); // Call the function to update the terraforming progress
 
             // Check if the terraforming progress is a multiple of a certain value (indicating completion of a terraform)
             if (terraformingProgress % 10 == 0) // Adjust the value as needed
             {
-                // Implement logic for resource gain
+                // Implement logic for building construction and resource gain
                 Debug.Log("Resource found");
                 GainRandomResource();
             }
@@ -100,6 +98,7 @@ public class TerraformingScript : MonoBehaviour
             Debug.Log("Congratulations! You have successfully terraformed the planet!");
         }
     }
+
 
     // Function to gain a random resource
     private void GainRandomResource()
