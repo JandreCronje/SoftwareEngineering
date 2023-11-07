@@ -49,19 +49,35 @@ public class TerraformingScript : MonoBehaviour
         // Allowing the player to press number buttons to build a building
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            buildingConstructionScript.ConstructShelter(2);
+            buildingConstructionScript.ConstructShelter(2,2,0,0);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            buildingConstructionScript.ConstructEnergyGenerator(1,2);
+            buildingConstructionScript.ConstructEnergyGenerator(0, 4, 2, 0);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            buildingConstructionScript.ConstructBiodiversityFarm(3,4);
+            buildingConstructionScript.ConstructBiodiversityFarm(5, 0, 1, 0);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            buildingConstructionScript.ConstructAdvancedLaboratory(5,5,5);
+            buildingConstructionScript.ConstructAdvancedLaboratory(1, 0, 0,6);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            buildingConstructionScript.ConstructBioDome(3, 4, 2, 0);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            buildingConstructionScript.ConstructOxygenFarm(0, 0, 0, 4);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            buildingConstructionScript.ConstructFoodStorage(3, 0, 0, 2);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            buildingConstructionScript.ConstructLiveStockFarm(0, 2, 0, 0);
         }
     }
 
@@ -105,7 +121,7 @@ public class TerraformingScript : MonoBehaviour
     {
         // Implement logic to gain a random resource
         // You can use the ResourceGatheringScript here to handle resource gain
-        int randomResource = Random.Range(1, 4); // Generates a random resource type between 1 and 3 (inclusive)
+        int randomResource = Random.Range(1, 5); // Generates a random resource type between 1 and 3 (inclusive)
         switch (randomResource)
         {
             case 1:
@@ -116,6 +132,9 @@ public class TerraformingScript : MonoBehaviour
                 break;
             case 3:
                 resourceGatheringScript.resourceType3 += 1; // Increase resource type 3
+                break;
+            case 4:
+                resourceGatheringScript.resourceType4 += 1; // Increase resource type 3
                 break;
             default:
                 break;
