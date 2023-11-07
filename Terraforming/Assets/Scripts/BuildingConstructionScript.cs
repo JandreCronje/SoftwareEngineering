@@ -21,12 +21,12 @@ public class BuildingConstructionScript : MonoBehaviour
 
 
     // Function to construct a shelter
-    public void ConstructShelter(int resource1Cost, int resource2Cost, int resource3Cost, int resource4Cost)
+    public void ConstructShelter(int FoodCost, int EnergyCost, int OxygenCost, int MineralsCost)
     {
         // Check if there are enough resources to construct the building
-        if (resourceGatheringScript.resourceType1 >= resource1Cost && resourceGatheringScript.resourceType2 >= resource2Cost && resourceGatheringScript.resourceType3 >= resource3Cost && resourceGatheringScript.resourceType4 >= resource4Cost)
+        if (resourceGatheringScript.Food >= FoodCost && resourceGatheringScript.Energy >= EnergyCost && resourceGatheringScript.Oxygen >= OxygenCost && resourceGatheringScript.Minerals >= MineralsCost)
         {
-            resourceGatheringScript.SpendResources(resource1Cost, resource2Cost, 0, 0);
+            resourceGatheringScript.SpendResources(FoodCost, EnergyCost, 0, 0);
             Debug.Log("Constructed the Shelter Building with capacity: " + shelterCapacity);
             // Implement logic to construct the random building 2
         }
@@ -37,12 +37,12 @@ public class BuildingConstructionScript : MonoBehaviour
     }
 
     // Function to construct an energy generator
-    public void ConstructEnergyGenerator(int resource1Cost, int resource2Cost, int resource3Cost, int resource4Cost)
+    public void ConstructEnergyGenerator(int FoodCost, int EnergyCost, int OxygenCost, int MineralsCost)
     {
         // Check if there are enough resources to construct the building
-        if (resourceGatheringScript.resourceType1 >= resource1Cost && resourceGatheringScript.resourceType2 >= resource2Cost && resourceGatheringScript.resourceType3 >= resource3Cost && resourceGatheringScript.resourceType4 >= resource4Cost)
+        if (resourceGatheringScript.Food >= FoodCost && resourceGatheringScript.Energy >= EnergyCost && resourceGatheringScript.Oxygen >= OxygenCost && resourceGatheringScript.Minerals >= MineralsCost)
         {
-            resourceGatheringScript.SpendResources(0, resource2Cost, resource3Cost, 0);
+            resourceGatheringScript.SpendResources(0, EnergyCost, OxygenCost, 0);
             Debug.Log("Constructed the EnergyGenerator Building with production rate: " + energyProductionRate);
             // Implement logic to construct the random building 2
         }
@@ -53,12 +53,12 @@ public class BuildingConstructionScript : MonoBehaviour
     }
 
     // Function to construct a biodiversity farm
-    public void ConstructBiodiversityFarm(int resource1Cost, int resource2Cost, int resource3Cost, int resource4Cost)
+    public void ConstructBiodiversityFarm(int FoodCost, int EnergyCost, int OxygenCost, int MineralsCost)
     {
         // Check if there are enough resources to construct the building
-        if (resourceGatheringScript.resourceType1 >= resource1Cost && resourceGatheringScript.resourceType2 >= resource2Cost && resourceGatheringScript.resourceType3 >= resource3Cost && resourceGatheringScript.resourceType4 >= resource4Cost)
+        if (resourceGatheringScript.Food >= FoodCost && resourceGatheringScript.Energy >= EnergyCost && resourceGatheringScript.Oxygen >= OxygenCost && resourceGatheringScript.Minerals >= MineralsCost)
         {
-            resourceGatheringScript.SpendResources(resource1Cost, 0, resource3Cost, 0);
+            resourceGatheringScript.SpendResources(FoodCost, 0, OxygenCost, 0);
             Debug.Log("Constructed the Bio diversity Farm with Farming Rate:" + foodProductionRate);
             // Implement logic to construct the random building 2
         }
@@ -69,12 +69,12 @@ public class BuildingConstructionScript : MonoBehaviour
     }
 
     // Function to construct an advanced laboratory
-    public void ConstructAdvancedLaboratory(int resource1Cost, int resource2Cost, int resource3Cost, int resource4Cost)
+    public void ConstructAdvancedLaboratory(int FoodCost, int EnergyCost, int OxygenCost, int MineralsCost)
     {
         // Check if there are enough resources to construct the building
-        if (resourceGatheringScript.resourceType1 >= resource1Cost && resourceGatheringScript.resourceType2 >= resource2Cost && resourceGatheringScript.resourceType3 >= resource3Cost && resourceGatheringScript.resourceType4 >= resource4Cost)
+        if (resourceGatheringScript.Food >= FoodCost && resourceGatheringScript.Energy >= EnergyCost && resourceGatheringScript.Oxygen >= OxygenCost && resourceGatheringScript.Minerals >= MineralsCost)
         {
-            resourceGatheringScript.SpendResources(resource1Cost, 0, 0, resource4Cost);
+            resourceGatheringScript.SpendResources(FoodCost, 0, 0, MineralsCost);
             Debug.Log("Constructed the Advanced Laboratory with research rate:" + researchRate);
             // Implement logic to construct the random building 2
         }
@@ -85,11 +85,11 @@ public class BuildingConstructionScript : MonoBehaviour
     }
 
     // Function to construct a random building 1
-    public void ConstructBioDome(int resource1Cost, int resource2Cost, int resource3Cost, int resource4Cost)
+    public void ConstructBioDome(int FoodCost, int EnergyCost, int OxygenCost, int MineralsCost)
     {
-        if (resourceGatheringScript.resourceType1 >= resource1Cost && resourceGatheringScript.resourceType2 >= resource2Cost && resourceGatheringScript.resourceType3 >= resource3Cost && resourceGatheringScript.resourceType4 >= resource4Cost)
+        if (resourceGatheringScript.Food >= FoodCost && resourceGatheringScript.Energy >= EnergyCost && resourceGatheringScript.Oxygen >= OxygenCost && resourceGatheringScript.Minerals >= MineralsCost)
         {
-            resourceGatheringScript.SpendResources(resource1Cost, resource2Cost, resource3Cost, 0);
+            resourceGatheringScript.SpendResources(FoodCost, EnergyCost, OxygenCost, 0);
             Debug.Log("Constructed the Random Building 1.");
             // Implement logic to construct the random building 1
         }
@@ -99,12 +99,12 @@ public class BuildingConstructionScript : MonoBehaviour
         }
     }
 
-    public void ConstructOxygenFarm(int resource1Cost, int resource2Cost, int resource3Cost, int resource4Cost)
+    public void ConstructOxygenFarm(int FoodCost, int EnergyCost, int OxygenCost, int MineralsCost)
     {
         // Check if there are enough resources to construct the building
-        if (resourceGatheringScript.resourceType1 >= resource1Cost && resourceGatheringScript.resourceType2 >= resource2Cost && resourceGatheringScript.resourceType3 >= resource3Cost && resourceGatheringScript.resourceType4 >= resource4Cost)
+        if (resourceGatheringScript.Food >= FoodCost && resourceGatheringScript.Energy >= EnergyCost && resourceGatheringScript.Oxygen >= OxygenCost && resourceGatheringScript.Minerals >= MineralsCost)
         {
-            resourceGatheringScript.SpendResources(0, 0, 0, resource4Cost);
+            resourceGatheringScript.SpendResources(0, 0, 0, MineralsCost);
             Debug.Log("Constructed the Random Building 2.");
             // Implement logic to construct the random building 2
         }
@@ -114,12 +114,12 @@ public class BuildingConstructionScript : MonoBehaviour
         }
     }
 
-    public void ConstructFoodStorage(int resource1Cost, int resource2Cost, int resource3Cost, int resource4Cost)
+    public void ConstructFoodStorage(int FoodCost, int EnergyCost, int OxygenCost, int MineralsCost)
     {
         // Check if there are enough resources to construct the building
-        if (resourceGatheringScript.resourceType1 >= resource1Cost && resourceGatheringScript.resourceType2 >= resource2Cost && resourceGatheringScript.resourceType3 >= resource3Cost && resourceGatheringScript.resourceType4 >= resource4Cost)
+        if (resourceGatheringScript.Food >= FoodCost && resourceGatheringScript.Energy >= EnergyCost && resourceGatheringScript.Oxygen >= OxygenCost && resourceGatheringScript.Minerals >= MineralsCost)
         {
-            resourceGatheringScript.SpendResources(resource1Cost, 0, 0, resource4Cost);
+            resourceGatheringScript.SpendResources(FoodCost, 0, 0, MineralsCost);
             Debug.Log("Constructed the Random Building 2.");
             // Implement logic to construct the random building 2
         }
@@ -129,12 +129,12 @@ public class BuildingConstructionScript : MonoBehaviour
         }
     }
 
-    public void ConstructLiveStockFarm(int resource1Cost, int resource2Cost, int resource3Cost, int resource4Cost)
+    public void ConstructLiveStockFarm(int FoodCost, int EnergyCost, int OxygenCost, int MineralsCost)
     {
         // Check if there are enough resources to construct the building
-        if (resourceGatheringScript.resourceType1 >= resource1Cost && resourceGatheringScript.resourceType2 >= resource2Cost && resourceGatheringScript.resourceType3 >= resource3Cost && resourceGatheringScript.resourceType4 >= resource4Cost)
+        if (resourceGatheringScript.Food >= FoodCost && resourceGatheringScript.Energy >= EnergyCost && resourceGatheringScript.Oxygen >= OxygenCost && resourceGatheringScript.Minerals >= MineralsCost)
         {
-            resourceGatheringScript.SpendResources(0, resource2Cost, 0, 0);
+            resourceGatheringScript.SpendResources(0, EnergyCost, 0, 0);
             Debug.Log("Constructed the Random Building 2.");
             // Implement logic to construct the random building 2
         }

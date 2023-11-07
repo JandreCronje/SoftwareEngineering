@@ -125,16 +125,16 @@ public class TerraformingScript : MonoBehaviour
         switch (randomResource)
         {
             case 1:
-                resourceGatheringScript.resourceType1 += 1; // Increase resource type 1
+                resourceGatheringScript.Food += 1; // Increase resource type 1
                 break;
             case 2:
-                resourceGatheringScript.resourceType2 += 1; // Increase resource type 2
+                resourceGatheringScript.Energy += 1; // Increase resource type 2
                 break;
             case 3:
-                resourceGatheringScript.resourceType3 += 1; // Increase resource type 3
+                resourceGatheringScript.Oxygen += 1; // Increase resource type 3
                 break;
             case 4:
-                resourceGatheringScript.resourceType4 += 1; // Increase resource type 3
+                resourceGatheringScript.Minerals += 1; // Increase resource type 3
                 break;
             default:
                 break;
