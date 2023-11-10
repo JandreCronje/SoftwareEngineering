@@ -21,6 +21,70 @@ public class ResourceGatheringScript : MonoBehaviour
         Minerals -= amount4;
     }
 
+    // Function to deduct food when consumed by the population
+    public void ConsumeFood(int amount)
+    {
+        if (Food >= amount)
+        {
+            Food -= amount;
+        }
+        else
+        {
+            Debug.Log("Not enough food to consume.");
+            // Optionally handle the consequences of not having enough food
+        }
+    }
+
+    // Function to deduct energy when consumed by the population
+    public void ConsumeEnergy(int amount)
+    {
+        if (Energy >= amount)
+        {
+            Energy -= amount;
+        }
+        else
+        {
+            Debug.Log("Not enough energy to consume.");
+            // Optionally handle the consequences of not having enough energy
+        }
+    }
+
+    // Function to deduct oxygen when consumed by the population
+    public void ConsumeOxygen(int amount)
+    {
+        if (Oxygen >= amount)
+        {
+            Oxygen -= amount;
+        }
+        else
+        {
+            Debug.Log("Not enough oxygen to consume.");
+            // Optionally handle the consequences of not having enough oxygen
+        }
+    }
+
+    // Building properties
+    public int FoodProductionPerBuilding = 3;
+    public int EnergyProductionPerBuilding = 3;
+    public int OxygenProductionPerBuilding = 2;
+
+
+
+    // Function to spend resources for the population
+    public void SpendResourcesForPopulation(int populationCount, int foodGenerated, int energyGenerated, int oxygenGenerated)
+    {
+        int totalResourceCost = populationCount * baseResourceDemand;
+
+        // Deduct resources based on the total resource cost for the population
+        SpendResources(totalResourceCost, totalResourceCost, totalResourceCost, totalResourceCost);
+
+        // Increase resources based on the production of each building
+        Food += foodGenerated;
+        Energy += energyGenerated;
+        Oxygen += oxygenGenerated;
+    }
+
+
     // Function to handle population demands
     public void HandlePopulationDemands(int populationCount, int energyDemand, int oxygenDemand, int foodDemand, int mineralDemand)
     {
@@ -55,11 +119,5 @@ public class ResourceGatheringScript : MonoBehaviour
             // Add code to handle the consequences of mineral shortage
         }
 
-        // You can add more checks and handle other resource shortages here based on your game's mechanics
-    }
-
-    internal void HandlePopulationDemands(int foodDemand, int energyDemand, int oxygenDemand, int mineralDemand)
-    {
-        throw new NotImplementedException();
     }
 }

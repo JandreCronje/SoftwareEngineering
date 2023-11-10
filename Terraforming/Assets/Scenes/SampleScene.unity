@@ -259,6 +259,9 @@ MonoBehaviour:
   Energy: 0
   Oxygen: 0
   Minerals: 0
+  FoodProductionPerBuilding: 2
+  EnergyProductionPerBuilding: 3
+  OxygenProductionPerBuilding: 1
 --- !u!114 &777120876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,7 +342,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2110199327}
   - component: {fileID: 2110199326}
-  - component: {fileID: 2110199325}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
@@ -347,26 +349,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2110199325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110199324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d41bf4e368f068f41ae3fcd3b45a7303, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
-  originalScale: {x: 0, y: 0, z: 0}
-  isPulsing: 0
-  pulseCompleted: 0
-  pulseSpeed: 2
-  pulseMagnitude: 0.2
-  pulseDuration: 1.5
-  timer: 0
 --- !u!212 &2110199326
 SpriteRenderer:
   m_ObjectHideFlags: 0
