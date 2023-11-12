@@ -221,6 +221,7 @@ GameObject:
   - component: {fileID: 777120875}
   - component: {fileID: 777120874}
   - component: {fileID: 777120879}
+  - component: {fileID: 777120880}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -254,9 +255,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3fe0e280d187ae4ea40003016d43252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceType1: 0
-  resourceType2: 0
-  resourceType3: 0
+  Food: 0
+  Energy: 0
+  Oxygen: 0
+  Minerals: 0
+  FoodProductionPerBuilding: 2
+  EnergyProductionPerBuilding: 3
+  OxygenProductionPerBuilding: 1
 --- !u!114 &777120876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,7 +319,20 @@ MonoBehaviour:
   terraformingProgress: 0
   resourceGatheringScript: {fileID: 777120875}
   buildingConstructionScript: {fileID: 777120877}
---- !u!1 &1755270640
+--- !u!114 &777120880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777120873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 702f130640f4d6246adb3c4effa698ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPopulation: 0
+--- !u!1 &2110199324
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -322,22 +340,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1755270642}
-  - component: {fileID: 1755270641}
+  - component: {fileID: 2110199327}
+  - component: {fileID: 2110199326}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Planet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!212 &1755270641
+--- !u!212 &2110199326
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1755270640}
+  m_GameObject: {fileID: 2110199324}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -372,27 +390,27 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.1254902, g: 0.1254902, b: 0.1254902, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 88fa22d8ec61b97499429761a17c6932, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 6, y: 6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &1755270642
+--- !u!4 &2110199327
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1755270640}
+  m_GameObject: {fileID: 2110199324}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.5, y: 5.5, z: 5.5}
+  m_LocalPosition: {x: 0.02, y: -0.01, z: 0}
+  m_LocalScale: {x: 1.3095104, y: 1.3095104, z: 1.3095104}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
