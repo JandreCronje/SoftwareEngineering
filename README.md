@@ -4,6 +4,7 @@
 Cameron Burns, Jandre Cronje and William Kuzmic</p>
 
 <hr>
+
 <details>
 <summary>About</summary>
 
@@ -13,10 +14,12 @@ Cameron Burns, Jandre Cronje and William Kuzmic</p>
 
 <p style="text-align: center;">This is our Terraforming game where you click to farm resources and build colony's and manage the population of those colony's</p>
 </details>
+
 <br>
+
 <details>
 <summary>Controls</summary>
-
+    
 ### Controls
 <hr>
 <p style="text-align: center;">Click to Terraform and earn resources</p>
@@ -27,18 +30,24 @@ Cameron Burns, Jandre Cronje and William Kuzmic</p>
 <summary>Population</summary>
 
 ### Population
+
 <hr>
+
 <p style="text-align: center;">The population grows after consuming resources and as they grow they request more and more resources</p>
 
 to try and balance this we made the buildings generate resources to help with the overall growth in consumption.
 
 </details>
-<br>
-<details>
 
+<br>
+
+<details>
 <summary>Buildings</summary>
 
 ### Buildings
+
+<hr>
+
 <p style="text-align: center;">Our Buildings:</p>
 
 - Shelter
@@ -51,12 +60,17 @@ to try and balance this we made the buildings generate resources to help with th
 - Livestock Farm
 
 </details>
+
 <br>
+
 <details>
 
 <summary>Resources</summary>
 
 ### Resources
+
+<hr>
+
 <p style="text-align: center;">Our Resources:</p>
 
 - Food
@@ -65,7 +79,9 @@ to try and balance this we made the buildings generate resources to help with th
 - Minerals
 
 </details>
+
 <br>
+
 <details>
 
 <summary>Features</summary>
@@ -73,7 +89,9 @@ to try and balance this we made the buildings generate resources to help with th
 <summary>Features</summary>
 
 ### Features
+
 <hr>
+
 <p style="text-align: center;">Our Features:</p>
 
 1. terraforming
