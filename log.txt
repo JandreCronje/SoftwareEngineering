@@ -1,0 +1,97 @@
+commit 96896b5a5ade539270047d1f5da52cab11c8553f
+Merge: 542b677 6405b2a
+Author: Jandre Cronje <jandrecronje@outlook.com>
+Date:   Tue Nov 14 16:23:56 2023 +1300
+
+    Merge branch 'main' of https://github.com/JandreCronje/SoftwareEngineering
+
+commit 542b6775659eacfba043e5af53a14da08f4f96e7
+Author: Jandre Cronje <jandrecronje@outlook.com>
+Date:   Tue Nov 14 16:23:49 2023 +1300
+
+    Commit Zip
+
+commit 6405b2abc215fd705699c6b8cc40234b749cfd08
+Author: JandreCronje <146157455+JandreCronje@users.noreply.github.com>
+Date:   Tue Nov 14 02:27:04 2023 +1300
+
+    Update README.md
+
+commit 991b5aabc9dc952ab049b9b014bb9bb8d2637950
+Author: JandreCronje <146157455+JandreCronje@users.noreply.github.com>
+Date:   Tue Nov 14 02:19:12 2023 +1300
+
+    Create README.md
+    
+    made a Readme file for our terraforming game
+
+commit 6c3c885125fc797a9f27b2a6795c30b75f80365b
+Author: Jandre Cronje <jandrecronje@outlook.com>
+Date:   Tue Nov 14 02:02:31 2023 +1300
+
+    Commit Build
+    
+    made a build of the game
+
+commit 1b44c5b01a8bcf3848b0329ba06084723163a00b
+Merge: b188db5 dd7705d
+Author: Jandre Cronje <jandrecronje@outlook.com>
+Date:   Mon Nov 13 12:31:01 2023 +1300
+
+    Merge branch 'Version-3'
+
+commit dd7705d7e563fbbe595fbdd14e04fc4b0e50084a
+Author: Jandre Cronje <jandrecronje@outlook.com>
+Date:   Sat Nov 11 12:04:57 2023 +1300
+
+    Commit Final Version
+    
+    added resource spend and generation for population
+
+commit b675d2d5dde026efc787401505e538233201b7b6
+Author: Jandre Cronje <jandrecronje@outlook.com>
+Date:   Wed Nov 8 12:24:16 2023 +1300
+
+    Commit Version 3
+    
+    Started population management
+
+commit b188db527beda357ec4b0d7ec7cbd2cb2b7df8e7
+Author: Jandre Cronje <jandrecronje@outlook.com>
+Date:   Wed Nov 8 11:29:35 2023 +1300
+
+    Commit Version 2
+    
+    Added additional Resource and Buildings
+
+commit 66e90a2094caf6ad84d2b5f484ad02de1e31e0a1
+Author: Jandre Cronje <jandrecronje@outlook.com>
+Date:   Thu Nov 2 10:08:03 2023 +1300
+
+    Commit Resource Change
+
+commit c2a5f24dae80f4e6f19e9e5e8deda2629e5e5e85
+Author: Jandre Cronje <jandrecronje@outlook.com>
+Date:   Thu Nov 2 09:13:49 2023 +1300
+
+    Commit Fixed Progress bar
+
+commit 7372d17a3997cdc23ead0127e445ede57652e8ec
+Author: Jandre Cronje <jandrecronje@outlook.com>
+Date:   Thu Nov 2 08:55:40 2023 +1300
+
+    Version 1
+    
+    Terraforming,ResourceGathering,Building
+
+commit 152ff92e3fc9cbc31aef5ae04bda0ce698b95565
+Author: Jandre Cronje <jandrecronje@outlook.com>
+Date:   Mon Oct 30 15:43:44 2023 +1300
+
+    Commit Unity git Setup
+
+commit 411645f951b444e9de8daf4acebb5304556f482f
+Author: JandreCronje <146157455+JandreCronje@users.noreply.github.com>
+Date:   Mon Oct 30 15:38:59 2023 +1300
+
+    Initial commit
